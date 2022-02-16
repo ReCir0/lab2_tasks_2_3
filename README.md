@@ -1,4 +1,4 @@
-# Json navigator(task 2.2)
+# Twitter API navigator(task 2.2)
 
 ## Reading a file
 
@@ -35,4 +35,4 @@ Every function is connected wia `main()`. All different scenarios of what can be
 
 
 
-# Some task(task 2.3)
+# Search the subscribers' location with Twitter API and get the map with markers of that locations(task 2.3)
