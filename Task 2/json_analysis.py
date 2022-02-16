@@ -9,7 +9,7 @@ def exit_check(text):
     if text == "exit":
         sys.exit()
 
-def read_file(file_url):
+def read_file():
     '''
     Reads a file and returns a dictinary
     >>> read_file('twitter1.json') #doctest: +ELLIPSIS
@@ -21,9 +21,15 @@ aggression and how to...
 'Brilliant Maps', 'screen_name': 'BrilliantMaps', 'location': 'London \
 and around the world', 'description':...
     '''
-    with open(file_url, encoding = 'utf-8') as file:
-        data = json.load(file)
-    return data
+    while True:
+        try:
+            print("Type in the name of the file: ")
+            name = input(">>> ")
+            with open(name, encoding = 'utf-8') as file:
+                data = json.load(file)
+            return data
+        except:
+            print("File wasn't found")
 
 def scan_main_list(json_obj):
     '''
@@ -129,7 +135,7 @@ def main():
     print("Press Enter to continue")
     value = input(">>> ")
     exit_check(value)
-    data = read_file('twitter1.json')
+    data = read_file()
 
     if isinstance(data, list):
         element = scan_main_list(data)
