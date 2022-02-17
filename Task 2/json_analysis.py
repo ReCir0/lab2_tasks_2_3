@@ -12,14 +12,6 @@ def exit_check(text):
 def read_file():
     '''
     Reads a file and returns a dictinary
-    >>> read_file('twitter1.json') #doctest: +ELLIPSIS
-    [{'created_at': 'Sun Jan 30 16:36:22 +0000 2022', 'id': 1487827036236394510, \
-'id_str': '1487827036236394510', 'text': 'Great seminar about "Putin’s \
-aggression and how to...
-    >>> read_file('twitter2.json') #doctest: +ELLIPSIS
-    {'users': [{'id': 2751434132, 'id_str': '2751434132', 'name': \
-'Brilliant Maps', 'screen_name': 'BrilliantMaps', 'location': 'London \
-and around the world', 'description':...
     '''
     while True:
         try:
